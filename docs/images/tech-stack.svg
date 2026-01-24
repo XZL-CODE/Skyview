@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 200">
+  <defs>
+    <linearGradient id="swift" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fc4a1a"/>
+      <stop offset="100%" style="stop-color:#f7b733"/>
+    </linearGradient>
+    <linearGradient id="swiftui" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea"/>
+      <stop offset="100%" style="stop-color:#764ba2"/>
+    </linearGradient>
+    <linearGradient id="combine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#11998e"/>
+      <stop offset="100%" style="stop-color:#38ef7d"/>
+    </linearGradient>
+    <linearGradient id="iokit" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ee0979"/>
+      <stop offset="100%" style="stop-color:#ff6a00"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="650" height="200" fill="#0f0f1a" rx="12"/>
+
+  <!-- 标题 -->
+  <text x="325" y="30" fill="#ffffff" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">技术栈</text>
+
+  <!-- Swift -->
+  <rect x="40" y="55" width="130" height="120" rx="12" fill="url(#swift)"/>
+  <text x="105" y="95" fill="white" font-family="Arial, sans-serif" font-size="32" text-anchor="middle">🔶</text>
+  <text x="105" y="130" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">Swift 5.9</text>
+  <text x="105" y="155" fill="rgba(255,255,255,0.8)" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">编程语言</text>
+
+  <!-- SwiftUI -->
+  <rect x="190" y="55" width="130" height="120" rx="12" fill="url(#swiftui)"/>
+  <text x="255" y="95" fill="white" font-family="Arial, sans-serif" font-size="32" text-anchor="middle">📱</text>
+  <text x="255" y="130" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">SwiftUI</text>
+  <text x="255" y="155" fill="rgba(255,255,255,0.8)" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">声明式 UI</text>
+
+  <!-- Combine -->
+  <rect x="340" y="55" width="130" height="120" rx="12" fill="url(#combine)"/>
+  <text x="405" y="95" fill="white" font-family="Arial, sans-serif" font-size="32" text-anchor="middle">🔄</text>
+  <text x="405" y="130" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">Combine</text>
+  <text x="405" y="155" fill="rgba(255,255,255,0.8)" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">响应式编程</text>
+
+  <!-- IOKit -->
+  <rect x="490" y="55" width="130" height="120" rx="12" fill="url(#iokit)"/>
+  <text x="555" y="95" fill="white" font-family="Arial, sans-serif" font-size="32" text-anchor="middle">⚙️</text>
+  <text x="555" y="130" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">IOKit</text>
+  <text x="555" y="155" fill="rgba(255,255,255,0.8)" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">硬件信息</text>
+</svg>

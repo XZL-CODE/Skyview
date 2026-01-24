@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320">
+  <defs>
+    <linearGradient id="card1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea"/>
+      <stop offset="100%" style="stop-color:#764ba2"/>
+    </linearGradient>
+    <linearGradient id="card2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#11998e"/>
+      <stop offset="100%" style="stop-color:#38ef7d"/>
+    </linearGradient>
+    <linearGradient id="card3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fc4a1a"/>
+      <stop offset="100%" style="stop-color:#f7b733"/>
+    </linearGradient>
+    <linearGradient id="card4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ee0979"/>
+      <stop offset="100%" style="stop-color:#ff6a00"/>
+    </linearGradient>
+    <linearGradient id="card5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00c6fb"/>
+      <stop offset="100%" style="stop-color:#005bea"/>
+    </linearGradient>
+    <linearGradient id="card6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f857a6"/>
+      <stop offset="100%" style="stop-color:#ff5858"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="800" height="320" fill="#0f0f1a" rx="12"/>
+
+  <!-- 标题 -->
+  <text x="400" y="35" fill="#ffffff" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle">功能特性</text>
+
+  <!-- 第一行卡片 -->
+  <!-- CPU -->
+  <rect x="30" y="60" width="115" height="110" rx="12" fill="url(#card1)"/>
+  <text x="87" y="95" fill="white" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">⚡</text>
+  <text x="87" y="125" fill="white" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">CPU</text>
+  <text x="87" y="145" fill="rgba(255,255,255,0.7)" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">使用率 · 温度</text>
+  <text x="87" y="160" fill="rgba(255,255,255,0.7)" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">核心信息</text>
+
+  <!-- Memory -->
+  <rect x="160" y="60" width="115" height="110" rx="12" fill="url(#card2)"/>
+  <text x="217" y="95" fill="white" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">🧠</text>
+  <text x="217" y="125" fill="white" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">内存</text>
+  <text x="217" y="145" fill="rgba(255,255,255,0.7)" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">使用量 · 压力</text>
+  <text x="217" y="160" fill="rgba(255,255,255,0.7)" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">交换空间</text>
+
+  <!-- GPU -->
+  <rect x="290" y="60" width="115" height="110" rx="12" fill="url(#card3)"/>
+  <text x="347" y="95" fill="white" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">🎮</text>
+  <text x="347" y="125" fill="white" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">GPU</text>
+  <text x="347" y="145" fill="rgba(255,255,255,0.7)" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">显卡信息</text>
+  <text x="347" y="160" fill="rgba(255,255,255,0.7)" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">显存使用</text>
+
+  <!-- Battery -->
+  <rect x="420" y="60" width="115" height="110" rx="12" fill="url(#card4)"/>
+  <text x="477" y="95" fill="white" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">🔋</text>
+  <text x="477" y="125" fill="white" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">电池</text>
+  <text x="477" y="145" fill="rgba(255,255,255,0.7)" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">电量 · 健康度</text>
+  <text x="477" y="160" fill="rgba(255,255,255,0.7)" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">充电状态</text>
+
+  <!-- Storage -->
+  <rect x="550" y="60" width="115" height="110" rx="12" fill="url(#card5)"/>
+  <text x="607" y="95" fill="white" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">💾</text>
+  <text x="607" y="125" fill="white" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">存储</text>
+  <text x="607" y="145" fill="rgba(255,255,255,0.7)" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">磁盘空间</text>
+  <text x="607" y="160" fill="rgba(255,255,255,0.7)" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">读写速度</text>
+
+  <!-- Network -->
+  <rect x="680" y="60" width="115" height="110" rx="12" fill="url(#card6)"/>
+  <text x="737" y="95" fill="white" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">🌐</text>
+  <text x="737" y="125" fill="white" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">网络</text>
+  <text x="737" y="145" fill="rgba(255,255,255,0.7)" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">上传下载</text>
+  <text x="737" y="160" fill="rgba(255,255,255,0.7)" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">IP 地址</text>
+
+  <!-- 第二行卡片 -->
+  <!-- Process -->
+  <rect x="160" y="190" width="115" height="110" rx="12" fill="#2d3436"/>
+  <text x="217" y="225" fill="white" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">📊</text>
+  <text x="217" y="255" fill="white" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">进程</text>
+  <text x="217" y="275" fill="rgba(255,255,255,0.7)" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">运行中应用</text>
+
+  <!-- USB -->
+  <rect x="290" y="190" width="115" height="110" rx="12" fill="#2d3436"/>
+  <text x="347" y="225" fill="white" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">🔌</text>
+  <text x="347" y="255" fill="white" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">USB</text>
+  <text x="347" y="275" fill="rgba(255,255,255,0.7)" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">已连接设备</text>
+
+  <!-- Bluetooth -->
+  <rect x="420" y="190" width="115" height="110" rx="12" fill="#2d3436"/>
+  <text x="477" y="225" fill="white" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">📡</text>
+  <text x="477" y="255" fill="white" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">蓝牙</text>
+  <text x="477" y="275" fill="rgba(255,255,255,0.7)" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">设备状态</text>
+
+  <!-- Display -->
+  <rect x="550" y="190" width="115" height="110" rx="12" fill="#2d3436"/>
+  <text x="607" y="225" fill="white" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">🖥️</text>
+  <text x="607" y="255" fill="white" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">显示器</text>
+  <text x="607" y="275" fill="rgba(255,255,255,0.7)" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">分辨率 · 刷新率</text>
+</svg>

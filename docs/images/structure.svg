@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 400">
+  <defs>
+    <linearGradient id="folderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea"/>
+      <stop offset="100%" style="stop-color:#764ba2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="550" height="400" fill="#1a1a2e" rx="12"/>
+
+  <!-- 标题 -->
+  <text x="275" y="30" fill="#ffffff" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">项目结构</text>
+
+  <!-- 文件树 -->
+  <g font-family="Monaco, Consolas, monospace" font-size="13">
+    <!-- Skyview/ -->
+    <text x="30" y="65" fill="#f7b733">📁</text>
+    <text x="55" y="65" fill="#f7b733" font-weight="bold">Skyview/</text>
+
+    <!-- SkyviewApp.swift -->
+    <text x="50" y="90" fill="#666">│</text>
+    <text x="50" y="90" fill="#666">├──</text>
+    <text x="85" y="90" fill="#fc4a1a">🔶</text>
+    <text x="105" y="90" fill="#fff">SkyviewApp.swift</text>
+    <text x="250" y="90" fill="#666" font-size="11">应用入口</text>
+
+    <!-- Models/ -->
+    <text x="50" y="120" fill="#666">├──</text>
+    <text x="85" y="120" fill="#667eea">📁</text>
+    <text x="105" y="120" fill="#667eea" font-weight="bold">Models/</text>
+    <text x="250" y="120" fill="#666" font-size="11">数据模型</text>
+
+    <text x="85" y="145" fill="#555">│   ├──</text>
+    <text x="145" y="145" fill="#888">CPUInfo.swift</text>
+    <text x="85" y="165" fill="#555">│   ├──</text>
+    <text x="145" y="165" fill="#888">MemoryInfo.swift</text>
+    <text x="85" y="185" fill="#555">│   └──</text>
+    <text x="145" y="185" fill="#888">...</text>
+
+    <!-- Services/ -->
+    <text x="50" y="215" fill="#666">├──</text>
+    <text x="85" y="215" fill="#38ef7d">📁</text>
+    <text x="105" y="215" fill="#38ef7d" font-weight="bold">Services/</text>
+    <text x="250" y="215" fill="#666" font-size="11">监控服务</text>
+
+    <text x="85" y="240" fill="#555">│   ├──</text>
+    <text x="145" y="240" fill="#888">CPUMonitor.swift</text>
+    <text x="85" y="260" fill="#555">│   └──</text>
+    <text x="145" y="260" fill="#888">...</text>
+
+    <!-- Views/ -->
+    <text x="50" y="290" fill="#666">├──</text>
+    <text x="85" y="290" fill="#ee0979">📁</text>
+    <text x="105" y="290" fill="#ee0979" font-weight="bold">Views/</text>
+    <text x="250" y="290" fill="#666" font-size="11">界面视图</text>
+
+    <text x="85" y="315" fill="#555">│   ├──</text>
+    <text x="145" y="315" fill="#888">Dashboard/</text>
+    <text x="85" y="335" fill="#555">│   ├──</text>
+    <text x="145" y="335" fill="#888">Cards/</text>
+    <text x="85" y="355" fill="#555">│   └──</text>
+    <text x="145" y="355" fill="#888">Components/</text>
+
+    <!-- Utilities/ -->
+    <text x="50" y="385" fill="#666">└──</text>
+    <text x="85" y="385" fill="#00c6fb">📁</text>
+    <text x="105" y="385" fill="#00c6fb" font-weight="bold">Utilities/</text>
+    <text x="250" y="385" fill="#666" font-size="11">工具类</text>
+  </g>
+</svg>
