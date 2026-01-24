@@ -1,7 +1,7 @@
 # Skyview
 
 <p align="center">
-  <img src="docs/images/logo.svg" width="128" height="128" alt="Skyview Logo">
+  <img src="docs/images/logo.svg" alt="Skyview Logo" style="max-width: 100%; height: auto;">
 </p>
 
 <p align="center">
@@ -22,7 +22,7 @@
 Skyview 是一款轻量级的 macOS 系统监控应用，使用 SwiftUI 原生开发，帮助你实时了解 Mac 的运行状态。
 
 <p align="center">
-  <img src="docs/images/architecture.svg" width="600" alt="Architecture">
+  <img src="docs/images/architecture.svg" alt="Architecture" style="max-width: 100%; height: auto;">
 </p>
 
 ---
@@ -57,7 +57,7 @@ Skyview 是一款轻量级的 macOS 系统监控应用，使用 SwiftUI 原生�
 </table>
 
 <p align="center">
-  <img src="docs/images/features.svg" width="700" alt="Features">
+  <img src="docs/images/features.svg" alt="Features" style="max-width: 100%; height: auto;">
 </p>
 
 ---
@@ -116,7 +116,7 @@ Skyview/
 ```
 
 <p align="center">
-  <img src="docs/images/structure.svg" width="500" alt="Project Structure">
+  <img src="docs/images/structure.svg" alt="Project Structure" style="max-width: 100%; height: auto;">
 </p>
 
 ---
@@ -124,7 +124,7 @@ Skyview/
 ## 技术栈
 
 <p align="center">
-  <img src="docs/images/tech-stack.svg" width="600" alt="Tech Stack">
+  <img src="docs/images/tech-stack.svg" alt="Tech Stack" style="max-width: 100%; height: auto;">
 </p>
 
 - **SwiftUI** - 声明式 UI 框架
@@ -137,7 +137,7 @@ Skyview/
 ## 截图
 
 <p align="center">
-  <img src="docs/images/总览.png" width="128" height="128" alt="Skyview Logo">
+  <img src="docs/images/总览.png" alt="Skyview Logo" style="max-width: 100%; height: auto;">
 </p>
 
 ---
