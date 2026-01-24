@@ -1,7 +1,7 @@
 # Skyview
 
 <p align="center">
-  <img src="docs/images/logo.svg" alt="Skyview Logo" style="max-width: 100%; height: auto;">
+  <img src="docs/images/logo.svg" width="128" height="128" alt="Skyview Logo">
 </p>
 
 <p align="center">
