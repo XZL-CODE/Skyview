@@ -1,0 +1,275 @@
+Skyview/Views/MainView.swift
+  s_c4fbff4fd8c8cf::t_3e4e43ab34dbae 69
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+  s_c4fbff4fd8c8cf::t_1160c184362d89 11
+Skyview/Views/Detail/CPUDetailView.swift
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+  s_c4fbff4fd8c8cf::t_49ef2f4ccbdf1f 58-78
+  s_c4fbff4fd8c8cf::t_0abfdadfeef836 165,322,370,394,419
+Skyview/Models/AppInfo.swift
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+  s_c4fbff4fd8c8cf::t_ddde52fcc96673 11,42
+Skyview/Models/BluetoothDeviceInfo.swift
+  s_c4fbff4fd8c8cf::t_a201fd783394cc 23,25,27,29,31
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+  s_c4fbff4fd8c8cf::t_ddde52fcc96673 10
+Skyview/Services/GPUMonitor.swift
+  s_c4fbff4fd8c8cf::t_ab00adb7ee9534 11
+  s_c4fbff4fd8c8cf::t_cc89f1d0bd5254 96,98,100
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+Skyview/Models/DiskIOInfo.swift
+  s_c4fbff4fd8c8cf::t_ddde52fcc96673 10
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+Skyview/Views/Detail/AudioDetailView.swift
+  s_c4fbff4fd8c8cf::t_0abfdadfeef836 57
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+Skyview/Views/Detail/BatteryDetailView.swift
+  s_c4fbff4fd8c8cf::t_0abfdadfeef836 180
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+Skyview-Info.plist
+  s_c4fbff4fd8c8cf::t_e16ac085b9d7ec 7-8
+Skyview/Views/Sidebar/SidebarView.swift
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+  s_c4fbff4fd8c8cf::t_ab48234fa1eb49 167
+  s_c4fbff4fd8c8cf::t_87640b442e0899 201,207,215,217,219,221,223,226,228
+SkyviewTests/ByteFormatterTests.swift
+  s_c4fbff4fd8c8cf::t_34e48edb01f297 1-44
+Skyview/Views/Detail/DisplayDetailView.swift
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+  s_c4fbff4fd8c8cf::t_0abfdadfeef836 129,147
+Skyview/Utilities/SettingsKeys.swift
+  s_c4fbff4fd8c8cf::t_41463eeba16a62 2,5,8-43,47-49
+  s_c4fbff4fd8c8cf::t_a35c419a744659 44-46
+Skyview/Models/BatteryInfo.swift
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+  s_c4fbff4fd8c8cf::t_6c04ce8880aeb2 21,24,27,32,34
+  s_c4fbff4fd8c8cf::t_ddde52fcc96673 10
+Skyview/Models/DisplayInfo.swift
+  s_c4fbff4fd8c8cf::t_ddde52fcc96673 10
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+Skyview/Views/Detail/BluetoothDetailView.swift
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+  s_c4fbff4fd8c8cf::t_0abfdadfeef836 67
+Skyview/Views/Detail/ApplicationDetailView.swift
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+Skyview/Views/Dashboard/DashboardView.swift
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+Skyview/Views/Cards/CPUCardView.swift
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+Skyview/Models/CPUInfo.swift
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+  s_c4fbff4fd8c8cf::t_ddde52fcc96673 10
+Skyview/Views/Cards/NetworkCardView.swift
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+Skyview/Services/AlertService.swift
+  s_c4fbff4fd8c8cf::t_a235cf05c1ea67 1-39,42-51,54-63,66-97
+  s_c4fbff4fd8c8cf::t_f93afa590d76eb 40-41,52-53,64-65
+Skyview/Views/Detail/DiskIODetailView.swift
+  s_c4fbff4fd8c8cf::t_0abfdadfeef836 67,98,211
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+Skyview.xcodeproj/project.pbxproj
+  s_c4fbff4fd8c8cf::t_e5236c169af44c 171-177
+  s_c4fbff4fd8c8cf::t_adb474517fe2bf 9-18,22
+  s_c4fbff4fd8c8cf::t_e8e7ba4eeb352c 259,316
+  s_c4fbff4fd8c8cf::t_7160b790d2efde 390-397,399-415,417-427
+  s_c4fbff4fd8c8cf::t_109171205082e0 188-194,197-203
+  s_c4fbff4fd8c8cf::t_9ea5453bdf0b14 148
+  s_c4fbff4fd8c8cf::t_03ff3c71e22f5e 343,375,398,416
+  s_c4fbff4fd8c8cf::t_9071112493dc64 158
+  s_c4fbff4fd8c8cf::t_bd327603cb69e6 46-52
+  s_c4fbff4fd8c8cf::t_b1dcd7eecb5290 100-122
+  s_c4fbff4fd8c8cf::t_f5a32b21e87028 136-139
+  s_c4fbff4fd8c8cf::t_ac158302026b02 333,365
+  s_c4fbff4fd8c8cf::t_93183ebc2a2dba 61,70
+  s_c4fbff4fd8c8cf::t_ce161d3a66af3f 344,376
+  s_c4fbff4fd8c8cf::t_93f3deeac1485e 347,379
+  s_c4fbff4fd8c8cf::t_314fa6f83824d8 96
+  s_c4fbff4fd8c8cf::t_167f6b59a1de95 31-35
+  s_c4fbff4fd8c8cf::t_8891cc36371135 447-455
+Skyview/Models/StorageInfo.swift
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+  s_c4fbff4fd8c8cf::t_ddde52fcc96673 10
+Skyview/InfoPlist.xcstrings
+  s_c4fbff4fd8c8cf::t_2d58895e1c8eaf 1-23
+Skyview/Views/Components/CardContainerView.swift
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+  s_c4fbff4fd8c8cf::t_8c94490efa42a1 17
+  s_c4fbff4fd8c8cf::t_0abfdadfeef836 11
+Skyview/Services/MetricsCollector.swift
+  s_c4fbff4fd8c8cf::t_ddde52fcc96673 13
+  s_c4fbff4fd8c8cf::t_38db444021eaaa 32-33
+  s_c4fbff4fd8c8cf::t_54bb8a76b1788c 1-12,14-31,34-257
+Skyview/Views/Detail/StorageDetailView.swift
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+  s_c4fbff4fd8c8cf::t_0abfdadfeef836 88
+Skyview/Services/SystemInfoManager.swift
+  s_c4fbff4fd8c8cf::t_8ee55bcaa7e9cf 39
+  s_c4fbff4fd8c8cf::t_98228a4cb24895 10,12-13,38,48,66-69,71-73,75-77,80,82-83,85-88,91-94,97-102,105-110,113-121,126,138-142,145-150
+  s_c4fbff4fd8c8cf::t_dc80b16b3e3ce1 123,128-130,133-135,143-144
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+Skyview/Views/Detail/DetailComponents.swift
+  s_c4fbff4fd8c8cf::t_0abfdadfeef836 11,64,118
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+SkyviewTests/RingBufferTests.swift
+  s_c4fbff4fd8c8cf::t_c3e942b0a9d90e 1-58
+Skyview/Services/AudioMonitor.swift
+  s_c4fbff4fd8c8cf::t_ab00adb7ee9534 12
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+Skyview/Views/MenuBar/MenuBarViews.swift
+  s_c4fbff4fd8c8cf::t_ff4f17cf1fc81b 1-126,128-143
+  s_c4fbff4fd8c8cf::t_e5249fc1081ebc 127
+Skyview/Models/AudioDeviceInfo.swift
+  s_c4fbff4fd8c8cf::t_ddde52fcc96673 10,16
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+Skyview/Models/ProcessInfoItem.swift
+  s_c4fbff4fd8c8cf::t_ddde52fcc96673 10
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+Skyview/Views/Detail/GPUDetailView.swift
+  s_c4fbff4fd8c8cf::t_0abfdadfeef836 211,236,292
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+Skyview.xcodeproj/xcshareddata/xcschemes/Skyview.xcscheme
+  s_c4fbff4fd8c8cf::t_bcb88f402c6907 1-89
+Skyview/Services/ApplicationMonitor.swift
+  s_c4fbff4fd8c8cf::t_ab00adb7ee9534 12
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+Skyview/Services/USBMonitor.swift
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+  s_c4fbff4fd8c8cf::t_e9895717c30c4e 32-35
+  s_c4fbff4fd8c8cf::t_cc78762284a9d8 53
+  s_c4fbff4fd8c8cf::t_ab00adb7ee9534 12
+Skyview/Utilities/ByteFormatter.swift
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+  s_c4fbff4fd8c8cf::t_319bc552d740ac 10
+Skyview/Utilities/Extensions.swift
+  s_c4fbff4fd8c8cf::t_65786f139f2e4a 76,78,80
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+Skyview/SkyviewApp.swift
+  s_c4fbff4fd8c8cf::t_a226b19a500cab 12-19,21,23,27-38
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+  s_c4fbff4fd8c8cf::t_6e6db18c52f883 11
+Skyview/Services/DisplayMonitor.swift
+  s_c4fbff4fd8c8cf::t_10893b3a462c54 92
+  s_c4fbff4fd8c8cf::t_ab00adb7ee9534 12
+  s_c4fbff4fd8c8cf::t_ca06fab5289b63 39
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+Skyview/Services/BatteryMonitor.swift
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+  s_c4fbff4fd8c8cf::t_ab00adb7ee9534 11
+Skyview/Views/Detail/MemoryDetailView.swift
+  s_c4fbff4fd8c8cf::t_0abfdadfeef836 100,191
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+Skyview/Views/Dashboard/OverviewView.swift
+  s_c4fbff4fd8c8cf::t_0abfdadfeef836 134
+  s_c4fbff4fd8c8cf::t_9ada0c0e1b9a08 107-110
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+Skyview/Models/GPUInfo.swift
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+  s_c4fbff4fd8c8cf::t_ddde52fcc96673 11
+Skyview/Views/Components/InfoRowView.swift
+  s_c4fbff4fd8c8cf::t_04aacf6aa3600b 15
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+  s_c4fbff4fd8c8cf::t_0abfdadfeef836 11,40
+Skyview/ContentView.swift
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+Skyview/Views/Cards/SystemCardView.swift
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+Skyview/Views/Detail/NetworkDetailView.swift
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+  s_c4fbff4fd8c8cf::t_0abfdadfeef836 109
+Skyview/Models/NetworkInfo.swift
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+  s_c4fbff4fd8c8cf::t_ddde52fcc96673 10
+Skyview/Services/CPUMonitor.swift
+  s_c4fbff4fd8c8cf::t_bb71584c0528b6 48
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+  s_c4fbff4fd8c8cf::t_a0637486e91d8b 12
+  s_c4fbff4fd8c8cf::t_e84fde189d27de 93-97
+  s_c4fbff4fd8c8cf::t_ab00adb7ee9534 11
+  s_c4fbff4fd8c8cf::t_bccd5e631e9f04 137,141-144,149-153
+  s_c4fbff4fd8c8cf::t_43cff7ea747498 14
+.github/workflows/ci.yml
+  s_c4fbff4fd8c8cf::t_ed7aae107d60b4 1-31
+Skyview/Models/SystemInfo.swift
+  s_c4fbff4fd8c8cf::t_ddde52fcc96673 10
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+Skyview/Models/USBDeviceInfo.swift
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+  s_c4fbff4fd8c8cf::t_ddde52fcc96673 10
+Skyview/Views/Detail/ProcessDetailView.swift
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+Skyview/Views/Cards/StorageCardView.swift
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+README.md
+  s_c4fbff4fd8c8cf::t_e30e9d0360973b 191
+  s_c4fbff4fd8c8cf::t_10b771681dc7aa 39-41,56-74
+  s_c4fbff4fd8c8cf::t_076321605cdf48 106
+  s_c4fbff4fd8c8cf::t_f20d436f39eee7 121,124-126,132-134,137-141
+Skyview/Views/Cards/MemoryCardView.swift
+  s_c4fbff4fd8c8cf::t_0abfdadfeef836 87
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+Skyview/Views/Cards/BatteryCardView.swift
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+Skyview/Views/Detail/SystemDetailView.swift
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+  s_c4fbff4fd8c8cf::t_0abfdadfeef836 180,233
+Skyview/Models/MemoryInfo.swift
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+  s_c4fbff4fd8c8cf::t_ddde52fcc96673 10
+Skyview/Services/SMCTemperatureReader.swift
+  s_c4fbff4fd8c8cf::t_ab00adb7ee9534 14
+  s_c4fbff4fd8c8cf::t_556386a243e096 1-13,15-37,41-244
+  s_c4fbff4fd8c8cf::t_d68f5331ad4e81 38-40
+Skyview/Services/ProcessMonitor.swift
+  s_c4fbff4fd8c8cf::t_ab00adb7ee9534 11
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+  s_c4fbff4fd8c8cf::t_dbcacbd40f36cf 18-22,29,34,40-41
+  s_c4fbff4fd8c8cf::t_ddde52fcc96673 125
+Skyview/Services/NetworkMonitor.swift
+  s_c4fbff4fd8c8cf::t_ab00adb7ee9534 12
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+  s_c4fbff4fd8c8cf::t_7f5df7e2769029 110
+Skyview/Services/DiskIOMonitor.swift
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+  s_c4fbff4fd8c8cf::t_ab00adb7ee9534 11
+Skyview/Services/StorageMonitor.swift
+  s_c4fbff4fd8c8cf::t_ab00adb7ee9534 10
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+Skyview/Views/Components/CircularProgressView.swift
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+Skyview/Views/Components/SparklineChartView.swift
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+Skyview/Services/BluetoothMonitor.swift
+  s_c4fbff4fd8c8cf::t_ab00adb7ee9534 11
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+  s_c4fbff4fd8c8cf::t_ecd51cff319c61 21
+  s_c4fbff4fd8c8cf::t_825c38da3f22ec 58,60,62,67-74,80-84,87,89,91
+Skyview/Views/Detail/USBDetailView.swift
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+  s_c4fbff4fd8c8cf::t_0abfdadfeef836 172
+Skyview/Views/Settings/SettingsView.swift
+  s_c4fbff4fd8c8cf::t_d187a86bbbc199 1-136
+Skyview/Localizable.xcstrings
+  s_c4fbff4fd8c8cf::t_2d58895e1c8eaf 1-4494
+Skyview/Services/MemoryMonitor.swift
+  s_c4fbff4fd8c8cf::t_2c92159bb9fd12 35-39,42,45-46
+  s_c4fbff4fd8c8cf::t_b5997147ea6fb9 3
+  s_c4fbff4fd8c8cf::t_ab00adb7ee9534 11
+SkyviewTests/ModelMathTests.swift
+  s_c4fbff4fd8c8cf::t_80d02fb151edba 1-67
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "0ca63aaf51a5a95ae2f680ee2a6e3170ce34e0d4",
+  "prompts": {},
+  "sessions": {
+    "s_c4fbff4fd8c8cf": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "076059e5-87d8-47f9-b091-070d327e2420",
+        "model": "claude-fable-5"
+      },
+      "human_author": "MacBookPro <abc10086xzl@gmail.com>"
+    }
+  }
+}
