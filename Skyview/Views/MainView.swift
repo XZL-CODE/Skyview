@@ -1,6 +1,6 @@
 //
 //  MainView.swift
-//  XZL-TEST
+//  Skyview
 //
 //  Created by xzl on 2026/1/23.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MainView: View {
-    @StateObject private var manager = SystemInfoManager()
+    @EnvironmentObject private var manager: SystemInfoManager
     @State private var selectedItem: NavigationItem = .overview
 
     var body: some View {
@@ -66,5 +66,6 @@ struct DetailView: View {
 
 #Preview {
     MainView()
+        .environmentObject(SystemInfoManager())
         .frame(width: 900, height: 700)
 }

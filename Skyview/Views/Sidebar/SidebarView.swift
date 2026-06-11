@@ -1,6 +1,6 @@
 //
 //  SidebarView.swift
-//  XZL-TEST
+//  Skyview
 //
 //  Created by xzl on 2026/1/23.
 //
@@ -164,7 +164,7 @@ struct SidebarItemView: View {
 
                 // 标题和数值
                 VStack(alignment: .leading, spacing: 2) {
-                    Text(item.rawValue)
+                    Text(LocalizedStringKey(item.rawValue))
                         .font(.system(size: 13, weight: isSelected ? .semibold : .regular))
                         .foregroundColor(isSelected ? .primary : .secondary)
 
@@ -198,13 +198,13 @@ struct SidebarItemView: View {
     private func getQuickValue() -> String {
         switch item {
         case .overview:
-            return "全部信息"
+            return String(localized: "全部信息")
         case .cpu:
             return String(format: "%.1f%%", manager.cpuInfo.usage)
         case .memory:
             return String(format: "%.1f%%", manager.memoryInfo.usagePercentage)
         case .gpu:
-            return manager.gpuInfo.first?.name ?? "未检测"
+            return manager.gpuInfo.first?.name ?? String(localized: "未检测")
         case .storage:
             return String(format: "%.1f%%", manager.storageInfo.usagePercentage)
         case .diskIO:
@@ -212,20 +212,20 @@ struct SidebarItemView: View {
         case .network:
             return "↓\(ByteFormatter.formatSpeed(manager.networkInfo.downloadSpeed))"
         case .application:
-            return "\(manager.topApps.count) 应用"
+            return String(localized: "\(manager.topApps.count) 应用")
         case .process:
-            return "\(manager.topProcesses.count) 进程"
+            return String(localized: "\(manager.topProcesses.count) 进程")
         case .display:
-            return "\(manager.displayInfo.count) 显示器"
+            return String(localized: "\(manager.displayInfo.count) 显示器")
         case .audio:
-            return "\(manager.audioDevices.filter { $0.deviceType == .output }.count) 输出"
+            return String(localized: "\(manager.audioDevices.filter { $0.deviceType == .output }.count) 输出")
         case .usb:
-            return "\(manager.usbDevices.count) 设备"
+            return String(localized: "\(manager.usbDevices.count) 设备")
         case .bluetooth:
             let connected = manager.bluetoothDevices.filter { $0.isConnected }.count
-            return "\(connected) 已连接"
+            return String(localized: "\(connected) 已连接")
         case .battery:
-            return manager.batteryInfo.hasBattery ? String(format: "%.0f%%", manager.batteryInfo.level) : "无电池"
+            return manager.batteryInfo.hasBattery ? String(format: "%.0f%%", manager.batteryInfo.level) : String(localized: "无电池")
         case .system:
             return manager.systemInfo.uptime.formatUptime()
         }

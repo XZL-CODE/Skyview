@@ -1,6 +1,6 @@
 //
 //  GPUMonitor.swift
-//  XZL-TEST
+//  Skyview
 //
 //  Created by xzl on 2026/1/23.
 //
@@ -8,7 +8,7 @@
 import Foundation
 import Metal
 
-class GPUMonitor {
+nonisolated class GPUMonitor {
     func getGPUInfo() -> [GPUInfo] {
         var gpuList: [GPUInfo] = []
 
@@ -93,11 +93,11 @@ class GPUMonitor {
     private func getGPUFamily(_ device: MTLDevice) -> String {
         // Apple GPU 家族检测
         if device.supportsFamily(.apple9) {
-            return "Apple 9 (M3系列)"
+            return String(localized: "Apple 9 (M3系列)")
         } else if device.supportsFamily(.apple8) {
-            return "Apple 8 (M2系列)"
+            return String(localized: "Apple 8 (M2系列)")
         } else if device.supportsFamily(.apple7) {
-            return "Apple 7 (M1系列)"
+            return String(localized: "Apple 7 (M1系列)")
         } else if device.supportsFamily(.apple6) {
             return "Apple 6 (A14)"
         } else if device.supportsFamily(.apple5) {

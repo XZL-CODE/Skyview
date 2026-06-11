@@ -1,13 +1,13 @@
 //
 //  StorageMonitor.swift
-//  XZL-TEST
+//  Skyview
 //
 //  Created by xzl on 2026/1/23.
 //
 
 import Foundation
 
-class StorageMonitor {
+nonisolated class StorageMonitor {
     func getStorageInfo() -> StorageInfo {
         let fileManager = FileManager.default
         let homeURL = fileManager.homeDirectoryForCurrentUser

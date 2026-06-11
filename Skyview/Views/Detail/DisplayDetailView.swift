@@ -1,6 +1,6 @@
 //
 //  DisplayDetailView.swift
-//  XZL-TEST
+//  Skyview
 //
 //  Created by xzl on 2026/1/23.
 //
@@ -126,7 +126,7 @@ struct DisplayCardView: View {
 }
 
 struct DisplayInfoRow: View {
-    let label: String
+    let label: LocalizedStringKey
     let value: String
 
     var body: some View {
@@ -144,7 +144,7 @@ struct DisplayInfoRow: View {
 }
 
 struct DisplayStatCard: View {
-    let label: String
+    let label: LocalizedStringKey
     let value: String
 
     var body: some View {

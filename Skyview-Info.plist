@@ -4,5 +4,7 @@
 <dict>
 	<key>CFBundleIconFile</key>
 	<string>AppIcon</string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>Skyview 需要访问蓝牙以显示已配对设备的连接状态。</string>
 </dict>
 </plist>

@@ -1,6 +1,6 @@
 //
 //  SystemDetailView.swift
-//  XZL-TEST
+//  Skyview
 //
 //  Created by xzl on 2026/1/23.
 //
@@ -177,7 +177,7 @@ struct SystemDetailView: View {
 
 struct SystemQuickInfo: View {
     let icon: String
-    let label: String
+    let label: LocalizedStringKey
     let value: String
 
     var body: some View {
@@ -230,7 +230,7 @@ struct UptimeCard: View {
 
 struct UptimeUnit: View {
     let value: Int
-    let label: String
+    let label: LocalizedStringKey
 
     var body: some View {
         VStack(spacing: 4) {

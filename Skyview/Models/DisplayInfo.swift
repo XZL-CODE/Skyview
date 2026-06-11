@@ -1,13 +1,13 @@
 //
 //  DisplayInfo.swift
-//  XZL-TEST
+//  Skyview
 //
 //  Created by xzl on 2026/1/23.
 //
 
 import Foundation
 
-struct DisplayInfo: Identifiable {
+nonisolated struct DisplayInfo: Identifiable {
     let id = UUID()
     var name: String
     var width: Int

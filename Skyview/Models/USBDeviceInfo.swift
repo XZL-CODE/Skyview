@@ -1,13 +1,13 @@
 //
 //  USBDeviceInfo.swift
-//  XZL-TEST
+//  Skyview
 //
 //  Created by xzl on 2026/1/23.
 //
 
 import Foundation
 
-struct USBDeviceInfo: Identifiable {
+nonisolated struct USBDeviceInfo: Identifiable {
     let id = UUID()
     var name: String
     var vendorName: String

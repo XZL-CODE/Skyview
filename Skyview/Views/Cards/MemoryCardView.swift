@@ -1,6 +1,6 @@
 //
 //  MemoryCardView.swift
-//  XZL-TEST
+//  Skyview
 //
 //  Created by xzl on 2026/1/23.
 //
@@ -84,7 +84,7 @@ struct MemoryCardView: View {
 }
 
 struct MemoryBarView: View {
-    let label: String
+    let label: LocalizedStringKey
     let value: UInt64
     let total: UInt64
     let color: Color

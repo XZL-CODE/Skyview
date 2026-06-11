@@ -1,6 +1,6 @@
 //
 //  MemoryMonitor.swift
-//  XZL-TEST
+//  Skyview
 //
 //  Created by xzl on 2026/1/23.
 //
@@ -8,7 +8,7 @@
 import Foundation
 import Darwin
 
-class MemoryMonitor {
+nonisolated class MemoryMonitor {
     func getMemoryInfo() -> MemoryInfo {
         let totalMemory = ProcessInfo.processInfo.physicalMemory
 
@@ -31,17 +31,19 @@ class MemoryMonitor {
         let inactive = UInt64(stats.inactive_count) * pageSize
         let wired = UInt64(stats.wire_count) * pageSize
         let compressed = UInt64(stats.compressor_page_count) * pageSize
-        let free = UInt64(stats.free_count) * pageSize
-        let speculative = UInt64(stats.speculative_count) * pageSize
 
-        // 应用内存 = 活跃 + 非活跃 - 已压缩存储的部分
-        let appMemory = active + inactive
+        // 与活动监视器同口径:
+        // 应用内存 = 匿名页 (internal) 减去可清除部分 (purgeable)
+        let internalBytes = UInt64(stats.internal_page_count) * pageSize
+        let purgeable = UInt64(stats.purgeable_count) * pageSize
+        let appMemory = internalBytes > purgeable ? internalBytes - purgeable : 0
 
         // 已使用 = 应用内存 + 已联动 + 已压缩
+        // 注意: 不把 inactive 文件缓存算进"已使用"，它可被系统随时回收
         let used = appMemory + wired + compressed
 
-        // 实际可用 = 空闲 + 投机性
-        let actualFree = free + speculative
+        // 可用 = 总量 - 已使用 (含可立即回收的缓存)
+        let actualFree = totalMemory > used ? totalMemory - used : 0
 
         return MemoryInfo(
             total: totalMemory,

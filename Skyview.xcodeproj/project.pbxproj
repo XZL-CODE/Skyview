@@ -6,9 +6,20 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		18BE2A012F2400010059A60C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18BE29282F23493C0059A60C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18BE292F2F23493C0059A60C;
+			remoteInfo = Skyview;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		18BE29302F23493C0059A60C /* Skyview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skyview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18BE29C12F2392CB0059A60C /* Skyview-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Skyview-Info.plist"; sourceTree = "<group>"; };
+		18BE2A022F2400020059A60C /* SkyviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyviewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -17,10 +28,22 @@
 			path = Skyview;
 			sourceTree = "<group>";
 		};
+		18BE2A032F2400030059A60C /* SkyviewTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SkyviewTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		18BE292D2F23493C0059A60C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18BE2A052F2400050059A60C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,6 +58,7 @@
 			children = (
 				18BE29C12F2392CB0059A60C /* Skyview-Info.plist */,
 				18BE29322F23493C0059A60C /* Skyview */,
+				18BE2A032F2400030059A60C /* SkyviewTests */,
 				18BE29312F23493C0059A60C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				18BE29302F23493C0059A60C /* Skyview.app */,
+				18BE2A022F2400020059A60C /* SkyviewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,9 +93,32 @@
 			name = Skyview;
 			packageProductDependencies = (
 			);
-			productName = "XZL-TEST";
+			productName = Skyview;
 			productReference = 18BE29302F23493C0059A60C /* Skyview.app */;
 			productType = "com.apple.product-type.application";
+		};
+		18BE2A072F2400070059A60C /* SkyviewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18BE2A0A2F24000A0059A60C /* Build configuration list for PBXNativeTarget "SkyviewTests" */;
+			buildPhases = (
+				18BE2A042F2400040059A60C /* Sources */,
+				18BE2A052F2400050059A60C /* Frameworks */,
+				18BE2A062F2400060059A60C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18BE2A0B2F24000B0059A60C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				18BE2A032F2400030059A60C /* SkyviewTests */,
+			);
+			name = SkyviewTests;
+			packageProductDependencies = (
+			);
+			productName = SkyviewTests;
+			productReference = 18BE2A022F2400020059A60C /* SkyviewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -85,6 +133,10 @@
 					18BE292F2F23493C0059A60C = {
 						CreatedOnToolsVersion = 26.2;
 					};
+					18BE2A072F2400070059A60C = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = 18BE292F2F23493C0059A60C;
+					};
 				};
 			};
 			buildConfigurationList = 18BE292B2F23493C0059A60C /* Build configuration list for PBXProject "Skyview" */;
@@ -93,6 +145,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 18BE29272F23493C0059A60C;
 			minimizedProjectReferenceProxies = 1;
@@ -102,12 +155,20 @@
 			projectRoot = "";
 			targets = (
 				18BE292F2F23493C0059A60C /* Skyview */,
+				18BE2A072F2400070059A60C /* SkyviewTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		18BE292E2F23493C0059A60C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18BE2A062F2400060059A60C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -124,7 +185,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		18BE2A042F2400040059A60C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18BE2A0B2F24000B0059A60C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18BE292F2F23493C0059A60C /* Skyview */;
+			targetProxy = 18BE2A012F2400010059A60C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		18BE29392F23493E0059A60C /* Debug */ = {
@@ -180,7 +256,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 15.7;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -237,7 +313,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 15.7;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -254,9 +330,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_APP_SANDBOX = YES;
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Skyview-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Skyview;
@@ -265,11 +340,11 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.xzl.XZL-TEST";
+				MARKETING_VERSION = 1.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xzl.Skyview;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -287,9 +362,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_APP_SANDBOX = YES;
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Skyview-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Skyview;
@@ -298,16 +372,54 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.xzl.XZL-TEST";
+				MARKETING_VERSION = 1.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xzl.Skyview;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+		18BE2A082F2400080059A60C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xzl.SkyviewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Skyview.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Skyview";
+			};
+			name = Debug;
+		};
+		18BE2A092F2400090059A60C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xzl.SkyviewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Skyview.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Skyview";
 			};
 			name = Release;
 		};
@@ -328,6 +440,15 @@
 			buildConfigurations = (
 				18BE293C2F23493E0059A60C /* Debug */,
 				18BE293D2F23493E0059A60C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18BE2A0A2F24000A0059A60C /* Build configuration list for PBXNativeTarget "SkyviewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18BE2A082F2400080059A60C /* Debug */,
+				18BE2A092F2400090059A60C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

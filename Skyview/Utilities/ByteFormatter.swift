@@ -1,13 +1,13 @@
 //
 //  ByteFormatter.swift
-//  XZL-TEST
+//  Skyview
 //
 //  Created by xzl on 2026/1/23.
 //
 
 import Foundation
 
-struct ByteFormatter {
+nonisolated struct ByteFormatter {
     static func format(_ bytes: UInt64, decimals: Int = 1) -> String {
         let units = ["B", "KB", "MB", "GB", "TB", "PB"]
         var value = Double(bytes)

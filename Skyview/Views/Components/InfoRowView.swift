@@ -1,6 +1,6 @@
 //
 //  InfoRowView.swift
-//  XZL-TEST
+//  Skyview
 //
 //  Created by xzl on 2026/1/23.
 //
@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct InfoRowView: View {
-    let label: String
+    let label: LocalizedStringKey
     let value: String
     let valueColor: Color
 
-    init(label: String, value: String, valueColor: Color = .primary) {
+    init(label: LocalizedStringKey, value: String, valueColor: Color = .primary) {
         self.label = label
         self.value = value
         self.valueColor = valueColor
@@ -37,7 +37,7 @@ struct InfoRowView: View {
 struct InfoRowWithIconView: View {
     let iconName: String
     let iconColor: Color
-    let label: String
+    let label: LocalizedStringKey
     let value: String
 
     var body: some View {

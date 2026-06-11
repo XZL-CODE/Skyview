@@ -1,6 +1,6 @@
 //
 //  ApplicationMonitor.swift
-//  XZL-TEST
+//  Skyview
 //
 //  Created by xzl on 2026/1/23.
 //
@@ -9,7 +9,7 @@ import Foundation
 import AppKit
 import Darwin
 
-class ApplicationMonitor {
+nonisolated class ApplicationMonitor {
     private var previousCPUTimes: [Int32: (user: UInt64, system: UInt64)] = [:]
     private var previousUpdateTime: Date?
 

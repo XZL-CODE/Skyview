@@ -1,6 +1,6 @@
 //
 //  DisplayMonitor.swift
-//  XZL-TEST
+//  Skyview
 //
 //  Created by xzl on 2026/1/23.
 //
@@ -9,7 +9,7 @@ import Foundation
 import AppKit
 import CoreGraphics
 
-class DisplayMonitor {
+nonisolated class DisplayMonitor {
     func getDisplayInfo() -> [DisplayInfo] {
         var displays: [DisplayInfo] = []
 
@@ -36,7 +36,7 @@ class DisplayMonitor {
             }
 
             // 获取显示器名称
-            var displayName = "显示器 \(index + 1)"
+            var displayName = String(localized: "显示器 \(index + 1)")
             if let displayID = deviceDescription[NSDeviceDescriptionKey("NSScreenNumber")] as? CGDirectDisplayID {
                 displayName = getDisplayName(for: displayID) ?? displayName
             }
@@ -89,7 +89,7 @@ class DisplayMonitor {
 
         // 如果无法获取名称，根据是否内建显示器返回默认名称
         if CGDisplayIsBuiltin(displayID) != 0 {
-            return "内建显示器"
+            return String(localized: "内建显示器")
         }
         return nil
     }

@@ -1,0 +1,23 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "NSBluetoothAlwaysUsageDescription": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skyview needs Bluetooth access to show the connection status of paired devices."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skyview 需要访问蓝牙以显示已配对设备的连接状态。"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

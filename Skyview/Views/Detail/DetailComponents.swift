@@ -1,6 +1,6 @@
 //
 //  DetailComponents.swift
-//  XZL-TEST
+//  Skyview
 //
 //  Created by xzl on 2026/1/23.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DetailHeaderView: View {
-    let title: String
+    let title: LocalizedStringKey
     let subtitle: String
     let icon: String
     let gradient: [Color]
@@ -61,7 +61,7 @@ struct DetailHeaderView: View {
 }
 
 struct DetailChartCard: View {
-    let title: String
+    let title: LocalizedStringKey
     let data: [Double]
     let color: Color
     let unit: String
@@ -115,7 +115,7 @@ struct DetailChartCard: View {
 }
 
 struct StatPill: View {
-    let label: String
+    let label: LocalizedStringKey
     let value: String
     let color: Color
 

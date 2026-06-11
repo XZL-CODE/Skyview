@@ -1,6 +1,6 @@
 //
 //  DiskIOMonitor.swift
-//  XZL-TEST
+//  Skyview
 //
 //  Created by xzl on 2026/1/23.
 //
@@ -8,7 +8,7 @@
 import Foundation
 import IOKit
 
-class DiskIOMonitor {
+nonisolated class DiskIOMonitor {
     private var previousBytesRead: UInt64 = 0
     private var previousBytesWritten: UInt64 = 0
     private var previousReadOps: UInt64 = 0

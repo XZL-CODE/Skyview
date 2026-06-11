@@ -1,6 +1,6 @@
 //
 //  AudioMonitor.swift
-//  XZL-TEST
+//  Skyview
 //
 //  Created by xzl on 2026/1/23.
 //
@@ -9,7 +9,7 @@ import Foundation
 import CoreAudio
 import AudioToolbox
 
-class AudioMonitor {
+nonisolated class AudioMonitor {
     func getAudioDevices() -> [AudioDeviceInfo] {
         var devices: [AudioDeviceInfo] = []
 

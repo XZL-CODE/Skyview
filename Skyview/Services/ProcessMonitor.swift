@@ -1,6 +1,6 @@
 //
 //  ProcessMonitor.swift
-//  XZL-TEST
+//  Skyview
 //
 //  Created by xzl on 2026/1/23.
 //
@@ -8,29 +8,37 @@
 import Foundation
 import Darwin
 
-class ProcessMonitor {
+nonisolated class ProcessMonitor {
     private var previousCPUTimes: [Int32: (user: UInt64, system: UInt64)] = [:]
     private var previousUpdateTime: Date?
 
     func getTopProcesses(limit: Int = 10, sortBy: ProcessSortOrder = .cpu) -> [ProcessInfoItem] {
         var processes: [ProcessInfoItem] = []
 
-        // 获取所有进程 ID
-        var pids = [Int32](repeating: 0, count: 4096)
+        // 先查询实际进程数量，再分配缓冲区 (预留余量，避免快照间隙新进程被截断)
+        let bufferSize = proc_listpids(UInt32(PROC_ALL_PIDS), 0, nil, 0)
+        guard bufferSize > 0 else { return processes }
+
+        var pids = [Int32](repeating: 0, count: Int(bufferSize) / MemoryLayout<Int32>.stride + 64)
         let pidCount = proc_listpids(UInt32(PROC_ALL_PIDS), 0, &pids, Int32(pids.count * MemoryLayout<Int32>.stride))
 
         guard pidCount > 0 else { return processes }
 
         let actualPidCount = Int(pidCount) / MemoryLayout<Int32>.stride
         let currentTime = Date()
+        var seenPids = Set<Int32>(minimumCapacity: actualPidCount)
 
         for i in 0..<actualPidCount {
             let pid = pids[i]
             if pid == 0 { continue }
+            seenPids.insert(pid)
 
             guard let info = getProcessInfo(pid: pid, currentTime: currentTime) else { continue }
             processes.append(info)
         }
+
+        // 清理已退出进程的历史数据: 防止字典无界增长，也避免 PID 复用导致错误的 CPU 尖峰
+        previousCPUTimes = previousCPUTimes.filter { seenPids.contains($0.key) }
 
         previousUpdateTime = currentTime
 
@@ -114,7 +122,7 @@ class ProcessMonitor {
     }
 }
 
-enum ProcessSortOrder {
+nonisolated enum ProcessSortOrder {
     case cpu
     case memory
 }

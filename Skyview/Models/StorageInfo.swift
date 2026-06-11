@@ -1,13 +1,13 @@
 //
 //  StorageInfo.swift
-//  XZL-TEST
+//  Skyview
 //
 //  Created by xzl on 2026/1/23.
 //
 
 import Foundation
 
-struct StorageInfo {
+nonisolated struct StorageInfo {
     var total: UInt64
     var used: UInt64
     var free: UInt64

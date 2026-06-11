@@ -1,19 +1,19 @@
 //
 //  AudioDeviceInfo.swift
-//  XZL-TEST
+//  Skyview
 //
 //  Created by xzl on 2026/1/23.
 //
 
 import Foundation
 
-enum AudioDeviceType: String {
+nonisolated enum AudioDeviceType: String {
     case input = "输入"
     case output = "输出"
     case systemOutput = "系统输出"
 }
 
-struct AudioDeviceInfo: Identifiable {
+nonisolated struct AudioDeviceInfo: Identifiable {
     let id: AudioDeviceID
     var name: String
     var deviceType: AudioDeviceType

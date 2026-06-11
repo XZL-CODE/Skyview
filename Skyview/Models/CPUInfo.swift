@@ -1,13 +1,13 @@
 //
 //  CPUInfo.swift
-//  XZL-TEST
+//  Skyview
 //
 //  Created by xzl on 2026/1/23.
 //
 
 import Foundation
 
-struct CPUInfo {
+nonisolated struct CPUInfo {
     var usage: Double           // 总使用率 0-100
     var userUsage: Double       // 用户态使用率
     var systemUsage: Double     // 系统态使用率

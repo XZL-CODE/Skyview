@@ -1,6 +1,6 @@
 //
 //  CPUDetailView.swift
-//  XZL-TEST
+//  Skyview
 //
 //  Created by xzl on 2026/1/23.
 //
@@ -55,15 +55,28 @@ struct CPUDetailView: View {
 
                         Divider()
 
-                        // 系统负载
-                        VStack(alignment: .leading, spacing: 8) {
-                            Text("系统负载")
-                                .font(.caption)
-                                .foregroundColor(.secondary)
-                            Text(manager.cpuInfo.loadAverageFormatted)
-                                .font(.system(size: 14, weight: .medium, design: .monospaced))
+                        // 系统负载与温度
+                        HStack(alignment: .top) {
+                            VStack(alignment: .leading, spacing: 8) {
+                                Text("系统负载")
+                                    .font(.caption)
+                                    .foregroundColor(.secondary)
+                                Text(manager.cpuInfo.loadAverageFormatted)
+                                    .font(.system(size: 14, weight: .medium, design: .monospaced))
+                            }
+                            .frame(maxWidth: .infinity, alignment: .leading)
+
+                            if let temperature = manager.cpuInfo.temperature {
+                                VStack(alignment: .leading, spacing: 8) {
+                                    Text("温度")
+                                        .font(.caption)
+                                        .foregroundColor(.secondary)
+                                    Text(String(format: "%.1f°C", temperature))
+                                        .font(.system(size: 14, weight: .medium, design: .monospaced))
+                                        .foregroundColor(temperature >= 80 ? .red : (temperature >= 60 ? .orange : .primary))
+                                }
+                            }
                         }
-                        .frame(maxWidth: .infinity, alignment: .leading)
                     }
                     .padding(24)
                     .background(Color.cardBackground)
@@ -149,7 +162,7 @@ struct CPUDetailView: View {
 }
 
 struct CoreTypeCard: View {
-    let title: String
+    let title: LocalizedStringKey
     let count: Int
     let icon: String
     let color: Color
@@ -306,7 +319,7 @@ struct CacheCard: View {
 
 struct LargeGaugeView: View {
     let value: Double
-    let title: String
+    let title: LocalizedStringKey
     let gradient: [Color]
 
     var body: some View {
@@ -354,7 +367,7 @@ struct LargeGaugeView: View {
 }
 
 struct UsageBreakdownRow: View {
-    let label: String
+    let label: LocalizedStringKey
     let value: Double
     let color: Color
 
@@ -378,7 +391,7 @@ struct UsageBreakdownRow: View {
 
 struct InfoPill: View {
     let icon: String
-    let label: String
+    let label: LocalizedStringKey
     let value: String
 
     var body: some View {
@@ -403,7 +416,7 @@ struct InfoPill: View {
 }
 
 struct InfoCard: View {
-    let label: String
+    let label: LocalizedStringKey
     let value: String
 
     var body: some View {

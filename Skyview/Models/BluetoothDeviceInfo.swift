@@ -1,13 +1,13 @@
 //
 //  BluetoothDeviceInfo.swift
-//  XZL-TEST
+//  Skyview
 //
 //  Created by xzl on 2026/1/23.
 //
 
 import Foundation
 
-struct BluetoothDeviceInfo: Identifiable {
+nonisolated struct BluetoothDeviceInfo: Identifiable {
     let id = UUID()
     var name: String
     var address: String
@@ -20,15 +20,15 @@ struct BluetoothDeviceInfo: Identifiable {
 
     var rssiDescription: String {
         if rssi >= -50 {
-            return "极好"
+            return String(localized: "极好")
         } else if rssi >= -60 {
-            return "很好"
+            return String(localized: "很好")
         } else if rssi >= -70 {
-            return "良好"
+            return String(localized: "良好")
         } else if rssi >= -80 {
-            return "一般"
+            return String(localized: "一般")
         } else {
-            return "较弱"
+            return String(localized: "较弱")
         }
     }
 

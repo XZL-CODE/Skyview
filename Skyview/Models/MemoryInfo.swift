@@ -1,13 +1,13 @@
 //
 //  MemoryInfo.swift
-//  XZL-TEST
+//  Skyview
 //
 //  Created by xzl on 2026/1/23.
 //
 
 import Foundation
 
-struct MemoryInfo {
+nonisolated struct MemoryInfo {
     var total: UInt64           // 总内存
     var used: UInt64            // 已使用
     var free: UInt64            // 空闲

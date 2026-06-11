@@ -1,13 +1,13 @@
 //
 //  ProcessInfoItem.swift
-//  XZL-TEST
+//  Skyview
 //
 //  Created by xzl on 2026/1/23.
 //
 
 import Foundation
 
-struct ProcessInfoItem: Identifiable {
+nonisolated struct ProcessInfoItem: Identifiable {
     var id: Int32 { pid }
     var pid: Int32
     var name: String

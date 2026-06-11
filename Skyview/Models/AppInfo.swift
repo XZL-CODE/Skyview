@@ -1,6 +1,6 @@
 //
 //  AppInfo.swift
-//  XZL-TEST
+//  Skyview
 //
 //  Created by xzl on 2026/1/23.
 //
@@ -8,7 +8,7 @@
 import Foundation
 import AppKit
 
-struct AppInfo: Identifiable {
+nonisolated struct AppInfo: Identifiable {
     let id = UUID()
     var pid: Int32
     var name: String                    // 应用名称
@@ -39,7 +39,7 @@ struct AppInfo: Identifiable {
     }
 }
 
-enum AppSortOrder {
+nonisolated enum AppSortOrder {
     case memory
     case cpu
 }

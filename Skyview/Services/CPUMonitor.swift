@@ -1,6 +1,6 @@
 //
 //  CPUMonitor.swift
-//  XZL-TEST
+//  Skyview
 //
 //  Created by xzl on 2026/1/23.
 //
@@ -8,9 +8,10 @@
 import Foundation
 import Darwin
 
-class CPUMonitor {
+nonisolated class CPUMonitor {
+    private let temperatureReader = SMCTemperatureReader()
     private var previousCPUInfo: host_cpu_load_info?
-    private var previousPerCoreCPU: [(user: UInt64, system: UInt64, idle: UInt64, nice: UInt64)]?
+    private var previousPerCoreCPU: [(user: UInt32, system: UInt32, idle: UInt32, nice: UInt32)]?
 
     // 缓存的静态信息
     private var cachedBrand: String?
@@ -44,7 +45,7 @@ class CPUMonitor {
             idleUsage: usage.idle,
             niceUsage: usage.nice,
             coreCount: coreCount,
-            temperature: nil,
+            temperature: temperatureReader.cpuTemperature(),
             performanceCores: cachedPCores ?? coreCount,
             efficiencyCores: cachedECores ?? 0,
             loadAverage1Min: loadAvg.0,
@@ -89,10 +90,11 @@ class CPUMonitor {
         let niceDiff: Double
 
         if let previous = previousCPUInfo {
-            userDiff = Double(current.cpu_ticks.0 - previous.cpu_ticks.0)
-            systemDiff = Double(current.cpu_ticks.1 - previous.cpu_ticks.1)
-            idleDiff = Double(current.cpu_ticks.2 - previous.cpu_ticks.2)
-            niceDiff = Double(current.cpu_ticks.3 - previous.cpu_ticks.3)
+            // &- 防止 UInt32 tick 计数器回绕时无符号下溢导致崩溃 (长 uptime 必现)
+            userDiff = Double(current.cpu_ticks.0 &- previous.cpu_ticks.0)
+            systemDiff = Double(current.cpu_ticks.1 &- previous.cpu_ticks.1)
+            idleDiff = Double(current.cpu_ticks.2 &- previous.cpu_ticks.2)
+            niceDiff = Double(current.cpu_ticks.3 &- previous.cpu_ticks.3)
         } else {
             userDiff = Double(current.cpu_ticks.0)
             systemDiff = Double(current.cpu_ticks.1)
@@ -132,22 +134,23 @@ class CPUMonitor {
         }
 
         var perCoreUsage: [Double] = []
-        var currentPerCore: [(user: UInt64, system: UInt64, idle: UInt64, nice: UInt64)] = []
+        var currentPerCore: [(user: UInt32, system: UInt32, idle: UInt32, nice: UInt32)] = []
 
         for i in 0..<Int(numCPUs) {
             let offset = Int32(CPU_STATE_MAX) * Int32(i)
-            let user = UInt64(cpuInfo[Int(offset + CPU_STATE_USER)])
-            let system = UInt64(cpuInfo[Int(offset + CPU_STATE_SYSTEM)])
-            let idle = UInt64(cpuInfo[Int(offset + CPU_STATE_IDLE)])
-            let nice = UInt64(cpuInfo[Int(offset + CPU_STATE_NICE)])
+            let user = UInt32(bitPattern: cpuInfo[Int(offset + CPU_STATE_USER)])
+            let system = UInt32(bitPattern: cpuInfo[Int(offset + CPU_STATE_SYSTEM)])
+            let idle = UInt32(bitPattern: cpuInfo[Int(offset + CPU_STATE_IDLE)])
+            let nice = UInt32(bitPattern: cpuInfo[Int(offset + CPU_STATE_NICE)])
 
             currentPerCore.append((user, system, idle, nice))
 
             if let prev = previousPerCoreCPU, i < prev.count {
-                let userDiff = user > prev[i].user ? Double(user - prev[i].user) : 0
-                let systemDiff = system > prev[i].system ? Double(system - prev[i].system) : 0
-                let idleDiff = idle > prev[i].idle ? Double(idle - prev[i].idle) : 0
-                let niceDiff = nice > prev[i].nice ? Double(nice - prev[i].nice) : 0
+                // &- 同样防回绕
+                let userDiff = Double(user &- prev[i].user)
+                let systemDiff = Double(system &- prev[i].system)
+                let idleDiff = Double(idle &- prev[i].idle)
+                let niceDiff = Double(nice &- prev[i].nice)
 
                 let totalDiff = userDiff + systemDiff + idleDiff + niceDiff
                 if totalDiff > 0 {
@@ -181,19 +184,6 @@ class CPUMonitor {
             return String(cString: brand)
         }
 
-        // Apple Silicon 没有 brand_string
-        let coreCount = ProcessInfo.processInfo.processorCount
-        if coreCount >= 24 {
-            return "Apple M2 Ultra"
-        } else if coreCount >= 19 {
-            return "Apple M3 Max"
-        } else if coreCount >= 12 {
-            return "Apple M2 Pro / M3 Pro"
-        } else if coreCount >= 10 {
-            return "Apple M1 Pro / M2 Pro"
-        } else if coreCount >= 8 {
-            return "Apple M1 / M2 / M3"
-        }
         return "Apple Silicon"
     }
 

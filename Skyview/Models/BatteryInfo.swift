@@ -1,13 +1,13 @@
 //
 //  BatteryInfo.swift
-//  XZL-TEST
+//  Skyview
 //
 //  Created by xzl on 2026/1/23.
 //
 
 import Foundation
 
-struct BatteryInfo {
+nonisolated struct BatteryInfo {
     var level: Double               // 电量百分比 0-100
     var isCharging: Bool            // 是否充电中
     var isPluggedIn: Bool           // 是否接入电源
@@ -18,20 +18,20 @@ struct BatteryInfo {
 
     var statusText: String {
         if !hasBattery {
-            return "无电池"
+            return String(localized: "无电池")
         }
         if isCharging {
-            return "正在充电"
+            return String(localized: "正在充电")
         }
         if isPluggedIn {
-            return "已充满"
+            return String(localized: "已充满")
         }
         if let time = timeRemaining, time > 0 {
             let hours = time / 60
             let minutes = time % 60
-            return "剩余 \(hours):\(String(format: "%02d", minutes))"
+            return String(localized: "剩余 \(hours):\(String(format: "%02d", minutes))")
         }
-        return "使用电池"
+        return String(localized: "使用电池")
     }
 
     static var placeholder: BatteryInfo {

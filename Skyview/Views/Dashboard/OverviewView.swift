@@ -1,6 +1,6 @@
 //
 //  OverviewView.swift
-//  XZL-TEST
+//  Skyview
 //
 //  Created by xzl on 2026/1/23.
 //
@@ -104,10 +104,10 @@ struct WelcomeHeaderView: View {
 
     private func getGreeting() -> String {
         let hour = Calendar.current.component(.hour, from: Date())
-        if hour < 6 { return "夜深了" }
-        if hour < 12 { return "早上好" }
-        if hour < 18 { return "下午好" }
-        return "晚上好"
+        if hour < 6 { return String(localized: "夜深了") }
+        if hour < 12 { return String(localized: "早上好") }
+        if hour < 18 { return String(localized: "下午好") }
+        return String(localized: "晚上好")
     }
 }
 
@@ -131,7 +131,7 @@ struct TimeDisplayView: View {
 }
 
 struct OverviewGaugeCard: View {
-    let title: String
+    let title: LocalizedStringKey
     let value: Double
     let icon: String
     let gradient: [Color]

@@ -1,13 +1,13 @@
 //
 //  SystemInfo.swift
-//  XZL-TEST
+//  Skyview
 //
 //  Created by xzl on 2026/1/23.
 //
 
 import Foundation
 
-struct SystemInfo {
+nonisolated struct SystemInfo {
     var hostname: String
     var osVersion: String
     var kernelVersion: String

@@ -1,6 +1,6 @@
 //
 //  BluetoothDetailView.swift
-//  XZL-TEST
+//  Skyview
 //
 //  Created by xzl on 2026/1/23.
 //
@@ -64,7 +64,7 @@ struct BluetoothDetailView: View {
 }
 
 struct BluetoothSectionView: View {
-    let title: String
+    let title: LocalizedStringKey
     let icon: String
     let devices: [BluetoothDeviceInfo]
     let isConnected: Bool

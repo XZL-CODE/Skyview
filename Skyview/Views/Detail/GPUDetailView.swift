@@ -1,6 +1,6 @@
 //
 //  GPUDetailView.swift
-//  XZL-TEST
+//  Skyview
 //
 //  Created by xzl on 2026/1/23.
 //
@@ -208,7 +208,7 @@ struct MetalBadge: View {
 
 struct GPUSpecCard: View {
     let icon: String
-    let label: String
+    let label: LocalizedStringKey
     let value: String
     let color: Color
 
@@ -233,7 +233,7 @@ struct GPUSpecCard: View {
 }
 
 struct GPUInfoRow: View {
-    let label: String
+    let label: LocalizedStringKey
     let value: String
 
     var body: some View {
@@ -289,7 +289,7 @@ struct FeatureIndicator: View {
 
 struct EmptyStateView: View {
     let icon: String
-    let title: String
+    let title: LocalizedStringKey
     let message: String
 
     var body: some View {

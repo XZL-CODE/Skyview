@@ -1,6 +1,6 @@
 //
 //  BatteryMonitor.swift
-//  XZL-TEST
+//  Skyview
 //
 //  Created by xzl on 2026/1/23.
 //
@@ -8,7 +8,7 @@
 import Foundation
 import IOKit.ps
 
-class BatteryMonitor {
+nonisolated class BatteryMonitor {
     func getBatteryInfo() -> BatteryInfo {
         let snapshot = IOPSCopyPowerSourcesInfo().takeRetainedValue()
         let sources = IOPSCopyPowerSourcesList(snapshot).takeRetainedValue() as Array

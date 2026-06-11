@@ -13,6 +13,7 @@
   <img src="https://img.shields.io/badge/macOS-13.0+-brightgreen?style=flat-square" alt="macOS Version">
   <img src="https://img.shields.io/badge/Swift-5.9-orange?style=flat-square" alt="Swift">
   <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="License">
+  <a href="https://github.com/XZL-CODE/Skyview/actions/workflows/ci.yml"><img src="https://github.com/XZL-CODE/Skyview/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
 </p>
 
 ---
@@ -35,9 +36,9 @@ Skyview 是一款轻量级的 macOS 系统监控应用，使用 SwiftUI 原生�
 
 ### 硬件监控
 
-- **CPU** - 使用率、温度、核心信息
-- **内存** - 使用量、压力、交换空间
-- **GPU** - 显卡信息、显存使用
+- **CPU** - 使用率、温度（SMC 实测）、核心信息
+- **内存** - 使用量（与活动监视器同口径）、内存组成
+- **GPU** - 显卡信息、Metal 能力
 - **电池** - 电量、健康度、充电状态
 - **存储** - 磁盘空间、读写速度
 
@@ -51,6 +52,26 @@ Skyview 是一款轻量级的 macOS 系统监控应用，使用 SwiftUI 原生�
 - **USB 设备** - 已连接的 USB 设备
 - **蓝牙** - 蓝牙设备状态
 - **显示器** - 分辨率、刷新率
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 常驻与提醒
+
+- **菜单栏模式** - 菜单栏实时显示 CPU/内存，点击查看速览面板
+- **阈值告警** - CPU 持续过高、内存压力大、磁盘空间不足时系统通知
+- **后台降频** - 窗口非活跃时自动降低采集频率，省电
+
+</td>
+<td width="50%">
+
+### 体验
+
+- **设置页** - 开机自启、菜单栏内容、告警阈值均可配置
+- **中英双语** - 跟随系统语言自动切换
+- **后台采集** - 数据采集全部在后台线程，UI 零卡顿
 
 </td>
 </tr>
@@ -82,7 +103,7 @@ Skyview 是一款轻量级的 macOS 系统监控应用，使用 SwiftUI 原生�
 
 ```bash
 # 克隆仓库
-git clone https://github.com/yourusername/Skyview.git
+git clone https://github.com/XZL-CODE/Skyview.git
 
 # 打开项目
 cd Skyview
@@ -97,22 +118,27 @@ open Skyview.xcodeproj
 
 ```
 Skyview/
-├── SkyviewApp.swift          # 应用入口
+├── SkyviewApp.swift          # 应用入口（主窗口 + 菜单栏 + 设置三个 Scene）
 ├── Models/                   # 数据模型
-│   ├── CPUInfo.swift
-│   ├── MemoryInfo.swift
-│   ├── BatteryInfo.swift
-│   └── ...
 ├── Services/                 # 系统监控服务
+│   ├── MetricsCollector.swift     # 后台采集调度（单心跳分频）
+│   ├── SMCTemperatureReader.swift # SMC 温度读取
+│   ├── AlertService.swift         # 阈值告警
 │   ├── CPUMonitor.swift
-│   ├── MemoryMonitor.swift
 │   └── ...
 ├── Views/                    # 界面视图
 │   ├── Dashboard/           # 仪表盘
 │   ├── Cards/               # 信息卡片
+│   ├── Detail/              # 详情页
+│   ├── MenuBar/             # 菜单栏面板
+│   ├── Settings/            # 设置页
 │   ├── Sidebar/             # 侧边栏
 │   └── Components/          # 通用组件
-└── Utilities/               # 工具类
+├── Utilities/               # 工具类
+└── Localizable.xcstrings    # 中英双语 String Catalog
+
+SkyviewTests/                # 单元测试
+.github/workflows/ci.yml     # CI（构建 + 测试）
 ```
 
 <p align="center">
@@ -162,7 +188,7 @@ Skyview/
 
 ## 作者
 
-**xzl** - [GitHub](https://github.com/yourusername) · [CSDN](https://blog.csdn.net/qq_60735796)
+**xzl** - [GitHub](https://github.com/XZL-CODE) · [CSDN](https://blog.csdn.net/qq_60735796)
 
 ---
 

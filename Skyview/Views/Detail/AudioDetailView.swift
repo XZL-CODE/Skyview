@@ -1,6 +1,6 @@
 //
 //  AudioDetailView.swift
-//  XZL-TEST
+//  Skyview
 //
 //  Created by xzl on 2026/1/23.
 //
@@ -54,7 +54,7 @@ struct AudioDetailView: View {
 }
 
 struct AudioSectionView: View {
-    let title: String
+    let title: LocalizedStringKey
     let icon: String
     let devices: [AudioDeviceInfo]
 

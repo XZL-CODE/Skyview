@@ -1,6 +1,6 @@
 //
 //  Extensions.swift
-//  XZL-TEST
+//  Skyview
 //
 //  Created by xzl on 2026/1/23.
 //
@@ -73,11 +73,11 @@ extension TimeInterval {
         let minutes = (Int(self) % 3600) / 60
 
         if days > 0 {
-            return "\(days)天 \(hours)小时"
+            return String(localized: "\(days)天 \(hours)小时")
         } else if hours > 0 {
-            return "\(hours)小时 \(minutes)分钟"
+            return String(localized: "\(hours)小时 \(minutes)分钟")
         } else {
-            return "\(minutes)分钟"
+            return String(localized: "\(minutes)分钟")
         }
     }
 }

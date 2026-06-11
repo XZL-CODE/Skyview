@@ -1,6 +1,6 @@
 //
 //  NetworkDetailView.swift
-//  XZL-TEST
+//  Skyview
 //
 //  Created by xzl on 2026/1/23.
 //
@@ -106,7 +106,7 @@ struct NetworkDetailView: View {
 }
 
 struct SpeedCard: View {
-    let title: String
+    let title: LocalizedStringKey
     let speed: Double
     let icon: String
     let color: Color

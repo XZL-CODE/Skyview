@@ -1,13 +1,13 @@
 //
 //  NetworkInfo.swift
-//  XZL-TEST
+//  Skyview
 //
 //  Created by xzl on 2026/1/23.
 //
 
 import Foundation
 
-struct NetworkInfo {
+nonisolated struct NetworkInfo {
     var bytesReceived: UInt64       // 总接收字节
     var bytesSent: UInt64           // 总发送字节
     var downloadSpeed: Double       // 下载速度 (bytes/s)

@@ -1,13 +1,13 @@
 //
 //  DiskIOInfo.swift
-//  XZL-TEST
+//  Skyview
 //
 //  Created by xzl on 2026/1/23.
 //
 
 import Foundation
 
-struct DiskIOInfo {
+nonisolated struct DiskIOInfo {
     var bytesRead: UInt64
     var bytesWritten: UInt64
     var readSpeed: Double       // bytes/s

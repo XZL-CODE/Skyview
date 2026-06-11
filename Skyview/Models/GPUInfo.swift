@@ -1,6 +1,6 @@
 //
 //  GPUInfo.swift
-//  XZL-TEST
+//  Skyview
 //
 //  Created by xzl on 2026/1/23.
 //
@@ -8,7 +8,7 @@
 import Foundation
 import Metal
 
-struct GPUInfo: Identifiable {
+nonisolated struct GPUInfo: Identifiable {
     let id = UUID()
     var name: String
     var isLowPower: Bool

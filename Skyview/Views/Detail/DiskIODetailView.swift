@@ -1,6 +1,6 @@
 //
 //  DiskIODetailView.swift
-//  XZL-TEST
+//  Skyview
 //
 //  Created by xzl on 2026/1/23.
 //
@@ -64,7 +64,7 @@ struct DiskIODetailView: View {
 }
 
 struct DiskIOGaugeCard: View {
-    let title: String
+    let title: LocalizedStringKey
     let value: String
     let icon: String
     let color: Color
@@ -95,7 +95,7 @@ struct DiskIOGaugeCard: View {
 }
 
 struct DiskIOChartCard: View {
-    let title: String
+    let title: LocalizedStringKey
     let data: [Double]
     let color: Color
 
@@ -208,7 +208,7 @@ struct DiskIOStatsView: View {
 }
 
 struct DiskIOStatItem: View {
-    let label: String
+    let label: LocalizedStringKey
     let value: String
     let icon: String
     let color: Color

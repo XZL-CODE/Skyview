@@ -1,6 +1,6 @@
 //
 //  CardContainerView.swift
-//  XZL-TEST
+//  Skyview
 //
 //  Created by xzl on 2026/1/23.
 //
@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct CardContainerView<Content: View>: View {
-    let title: String
+    let title: LocalizedStringKey
     let iconName: String
     let iconColor: Color
     let content: Content
 
     init(
-        title: String,
+        title: LocalizedStringKey,
         iconName: String,
         iconColor: Color = .blue,
         @ViewBuilder content: () -> Content

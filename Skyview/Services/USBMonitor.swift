@@ -1,6 +1,6 @@
 //
 //  USBMonitor.swift
-//  XZL-TEST
+//  Skyview
 //
 //  Created by xzl on 2026/1/23.
 //
@@ -9,7 +9,7 @@ import Foundation
 import IOKit
 import IOKit.usb
 
-class USBMonitor {
+nonisolated class USBMonitor {
     func getUSBDevices() -> [USBDeviceInfo] {
         var devices: [USBDeviceInfo] = []
 
@@ -29,8 +29,10 @@ class USBMonitor {
                 service = IOIteratorNext(iterator)
             }
 
-            let name = getStringProperty(service, key: kUSBProductString) ?? getStringProperty(service, key: "USB Product Name") ?? "未知设备"
-            let vendorName = getStringProperty(service, key: kUSBVendorString) ?? getStringProperty(service, key: "USB Vendor Name") ?? "未知"
+            let productName = getStringProperty(service, key: kUSBProductString) ?? getStringProperty(service, key: "USB Product Name")
+            let vendor = getStringProperty(service, key: kUSBVendorString) ?? getStringProperty(service, key: "USB Vendor Name")
+            let name = productName ?? String(localized: "未知设备")
+            let vendorName = vendor ?? String(localized: "未知")
             let productID = getIntProperty(service, key: kUSBProductID) ?? 0
             let vendorID = getIntProperty(service, key: kUSBVendorID) ?? 0
             let serialNumber = getStringProperty(service, key: kUSBSerialNumberString)
@@ -48,7 +50,7 @@ class USBMonitor {
             if deviceClass == 9 { continue } // USB Hub
 
             // 只显示有名称的设备
-            if name == "未知设备" && vendorName == "未知" { continue }
+            if productName == nil && vendor == nil { continue }
 
             let info = USBDeviceInfo(
                 name: name,
